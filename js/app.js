@@ -23,6 +23,13 @@ $(document).ready(function(){
 		$('ryu-throwing').hide();
 		$('.ryu-ready').show();
 	});
+	$('.ryu-cool').keydown(function(e){
+		if (e.keyCode == 88){
+		$('.ryu-still').hide();
+		$('ryu-ready').hide();
+		$('.ryu-cool').show();
+		}
+	});
 });
 function playHadouken (){
 	$('#hadouken-sound')[0].volume = 0.5;
